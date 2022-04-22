@@ -23,7 +23,7 @@ console.log(isUnique('abcABC')) // -> true
 console.log(isUnique('abcadef')) // -> false
 ```
 
-- Решение
+<details><summary>Решение</summary>
 
     ```jsx
     function isUnique(str) {
@@ -48,11 +48,11 @@ console.log(isUnique('abcadef')) // -> false
       return new Set(str).size === str.length
     }
     ```
+</details>
 
-- Дополнительный материал
-
+<details><summary>Дополнительный материал</summary>
   [Урок 13. JavaScript. Все о Map, Set, WeakMap, WeakSet с примерами](https://youtu.be/mbcP3Oc0PjU)
-
+</details>
 
 ### Плоский массив
 
@@ -70,7 +70,7 @@ function flatten(array) {
 console.log(flatten([[1], [[2, 3]], [[[4]]]])) // -> [1, 2, 3, 4]
 ```
 
-- Решение
+<details><summary>Решение</summary>
 
     ```jsx
     function flatten(array) {
@@ -90,11 +90,11 @@ console.log(flatten([[1], [[2, 3]], [[[4]]]])) // -> [1, 2, 3, 4]
       return res
     }
     ```
+</details>
 
-- Дополнительный материал
-
+<details><summary>Дополнительный материал</summary>
   [Рекурсия в JavaScript за МИНУТУ! #Shorts](https://youtube.com/shorts/yVy7vHS6BJU?feature=share)
-
+</details>
 
 ### Удаление всех повторяющихся значений в строке
 
@@ -115,7 +115,8 @@ console.log(removeDupes('abcddbca')) // -> 'abcd'
 console.log(removeDupes('abababcdcdcd')) // -> 'abcd'
 ```
 
-- Решение
+<details><summary>Решение</summary>
+
 
     ```jsx
     function removeDupes(str) {
@@ -134,6 +135,7 @@ console.log(removeDupes('abababcdcdcd')) // -> 'abcd'
       return Array.from(new Set(str)).join('')
     }
     ```
+</details>
 
   ### 
 
@@ -157,7 +159,7 @@ console.log(highestFrequency(['abc', 'def'])) // -> abc
 console.log(highestFrequency(['abc', 'abc', 'def', 'def', 'def', 'ghi', 'ghi', 'ghi', 'ghi' ])) // -> ghi
 ```
 
-- Решение
+<details><summary>Решение</summary>
 
     ```jsx
     function highestFrequency(array) {
@@ -184,6 +186,7 @@ console.log(highestFrequency(['abc', 'abc', 'def', 'def', 'def', 'ghi', 'ghi', '
     }
     ```
 
+</details>
 
 ### Повернута ли строка?
 
@@ -203,7 +206,8 @@ console.log(isStringRotated('javascript', 'iptjavascr')) // -> true
 console.log(isStringRotated('javascript', 'java')) // -> false
 ```
 
-- Решение
+<details><summary>Решение</summary>
+
 
     ```jsx
     function isStringRotated(source, test) {
@@ -223,7 +227,7 @@ console.log(isStringRotated('javascript', 'java')) // -> false
       return source.length === test.length && (source + source).includes(test)
     }
     ```
-
+</details>
 
 ### Является ли массив подмножеством другого массива
 
@@ -244,7 +248,8 @@ console.log(arraySubset([1, 1, 1, 3], [1, 3, 3])) // -> false
 console.log(arraySubset([1, 2], [1, 2, 3])) // -> false
 ```
 
-- Решение
+<details><summary>Решение</summary>
+
 
     ```jsx
     function arraySubset(source, subset) {
@@ -262,7 +267,7 @@ console.log(arraySubset([1, 2], [1, 2, 3])) // -> false
       return true
     }
     ```
-
+</details>
 
 ### Анаграммы
 
@@ -281,7 +286,7 @@ console.log(allAnagrams(['abcd', 'bdac', 'cabd'])) // true
 console.log(allAnagrams(['abcd', 'bdXc', 'cabd'])) // false
 ```
 
-- Решение
+<details><summary>Решение</summary>
 
     ```jsx
     function allAnagrams(array) {
@@ -298,11 +303,11 @@ console.log(allAnagrams(['abcd', 'bdXc', 'cabd'])) // false
     console.log(allAnagrams(['abcd', 'bdac', 'cabd'])) // true
     console.log(allAnagrams(['abcd', 'bdXc', 'cabd'])) // false
     ```
+</details>
 
-- Дополнительный материал
-
+<details><summary> Дополнительный материал</summary>
   [Урок 12. JavaScript. Методы массивов (forEach, map, filter, reduce, find, findIndex). Js Массивы.](https://youtu.be/nEabP9CYCAQ)
-
+</details>
 
 ### Перевернуть матрицу 3х3
 
@@ -320,6 +325,7 @@ console.log(allAnagrams(['abcd', 'bdXc', 'cabd'])) // false
 
 **Output**: Number[][]
 
+
 ```jsx
 const matrix = [
   [1, 2, 3],
@@ -334,7 +340,7 @@ function rotate(source) {
 console.log(rotate(matrix))
 ```
 
-- Решение
+<details><summary>Решение</summary>
 
     ```jsx
     const matrix = [
@@ -364,6 +370,7 @@ console.log(rotate(matrix))
     }
     ```
 
+</details>
 
 ## Алгоритмы
 
@@ -384,7 +391,7 @@ console.log(search([1, 3, 6, 13, 17], 13)) // -> 3
 console.log(search([1, 3, 6, 13, 17], 12)) // -> -1
 ```
 
-- Решение
+<details><summary>Решение</summary>
 
     ```jsx
     // Time: O(n)
@@ -432,6 +439,7 @@ console.log(search([1, 3, 6, 13, 17], 12)) // -> -1
     }
     ```
 
+</details>
 
 ### Сбалансированные скобки
 
@@ -453,7 +461,7 @@ console.log(isBalanced('(50)(')) // -> false
 console.log(isBalanced('[{]}')) // -> false
 ```
 
-- Решение
+<details><summary>Решение</summary>
 
     ```jsx
     function isBalanced(string) {
@@ -486,6 +494,7 @@ console.log(isBalanced('[{]}')) // -> false
     }
     ```
 
+</details>
 
 ### Очередь с О(1) сложностью операций
 
@@ -512,11 +521,11 @@ class Queue {
 }
 ```
 
-- Дополнительный материал
-
+<details><summary>Дополнительный материал</summary>
   [Структуры данных в JavaScript. Пишем свой LinkedList](https://youtu.be/dFwNSyVC_5Y)
+</details>
 
-- Решение - LinkedList
+<details><summary>Решение - LinkedList</summary>
 
     ```jsx
     class LinkedList {
@@ -574,8 +583,10 @@ class Queue {
       }
     }
     ```
+</details>
 
-- Решение - HashTable
+<details><summary>Решение - HashTable</summary>
+
 
     ```jsx
     class Queue {
@@ -605,6 +616,7 @@ class Queue {
     }
     ```
 
+</details>
 
 ## JavaScript
 
@@ -631,7 +643,7 @@ console.log(deepEqual('test', 'test!')) // -> false
 console.log(deepEqual()) // -> true
 ```
 
-- Решение
+<details><summary>Решениеt</summary>
 
     ```jsx
     function deepEqual(a, b) {
@@ -660,6 +672,7 @@ console.log(deepEqual()) // -> true
       return true
     }
     ```
+</details>
 
 
 ### Последовательность Фибоначчи
@@ -683,7 +696,7 @@ function fibonacci(n) {
 console.log(fibonacci(8)) // -> [1, 1, 2, 3, 5, 8, 13, 21]
 ```
 
-- Решение
+<details><summary>Решениеt</summary>
 
     ```jsx
     function fibonacci(n) {
@@ -703,6 +716,7 @@ console.log(fibonacci(8)) // -> [1, 1, 2, 3, 5, 8, 13, 21]
     }
     ```
 
+</details>
 
 ### Своя функция bind
 
@@ -717,15 +731,16 @@ console.log(fibonacci(8)) // -> [1, 1, 2, 3, 5, 8, 13, 21]
 
 **Output**: Function
 
-- Дополнительные материалы
+<details><summary>Дополнительные материалы</summary>
 
   [Урок 15. JavaScript. Все о Spread и Rest](https://youtu.be/SGeQ-U0G7dE)
 
   [Урок 2. JavaScript. Что такое контекст this. Как работает call, bind, apply](https://youtu.be/UGapN-hrekw)
 
   [Как создать свой bind (4 способа + call, apply)](https://youtu.be/fJqYa3BuwaU)
+</details>
 
-- Решение
+<details><summary>Решениеt</summary>
 
     ```jsx
     Function.prototype.myBind = function(context, ...args) {
@@ -742,7 +757,7 @@ console.log(fibonacci(8)) // -> [1, 1, 2, 3, 5, 8, 13, 21]
     
     log.myBind(obj, 1, 2)()
     ```
-
+</details>
 
 ### Универсальная сумма
 
@@ -768,7 +783,7 @@ add()(20)()(22) // -> 42
 add()()()()()(20)()()()(22) // -> 42
 ```
 
-- Решение
+<details><summary>Решение</summary>
 
     ```jsx
     function add(a, b) {
@@ -786,6 +801,7 @@ add()()()()()(20)()()()(22) // -> 42
     }
     ```
 
+</details>
 
 ### GroupBy
 
@@ -809,7 +825,7 @@ groupBy([6.1, 4.2, 6.3], Math.floor) // -> { '4': [4.2], '6': [6.1, 6.3] }
 groupBy(['one', 'two', 'three'], 'length') // -> { '3': ['one', 'two'], '5': ['three'] }
 ```
 
-- Решение
+<details><summary>Решение</summary>
 
     ```jsx
     function groupBy(array, fn) {
@@ -825,20 +841,4 @@ groupBy(['one', 'two', 'three'], 'length') // -> { '3': ['one', 'two'], '5': ['t
       }, {})
     }
     ```
-
-
-## Для тех, кто хочет работать Frontend-разработчиком
-
-К сожалению, в сфере IT есть вещи, которые очень сложно понять или найти самостоятельно информацию по определенным темам. Поэтому очень важно иметь доступ к такой информации или быть знакомым с человеком, который мог бы объяснить.
-
-В рамках исключения, вы можете получить часть записи с одного из открытых уроков нашего курса “**Junior Frontend Developer**” на тему "**Подготовка к собеседованию**". Провел его Senior Frontend-разработчик Владилен Минин. Но для того, чтобы получить его нужно:
-
-- Зарегистрироваться по ссылке - [https://bit.ly/3raq1zY](https://bit.ly/3raq1zY)
-- На указанную почту придет письмо с данными для доступа к материалу. В письме будет содержаться логин, пароль и ссылка для входа
-- В личном кабинете появится материал
-
----
-
-Telegram: [https://t.me/result_school_it](https://t.me/result_school_it)
-VK: [https://vk.com/result.school](https://vk.com/result.school)
-Instagram: [https://www.instagram.com/result.school.it](https://www.instagram.com/result.school.it)
+</details>
